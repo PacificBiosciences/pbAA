@@ -205,6 +205,9 @@ A number of heuristics and advanced options are hidden from the interface. They 
 
 **_min-path-coverage_** : Low coverage for bubble path cutoff. This options filters paths in the graph with fewer than N reads supporting the path at a fractional membership.
 
+## Demonstration Data
+Demonstration data for testing __pbaa__ can be found [here](https://downloads.pacbcloud.com/public/dataset/pbAmpliconAnalysis_HLA/).  Dataset contains HiFi reads for 6 pooled HLA genes in FASTQ format. Outputs from running _pbaa_ as well as validated genotypes are included.
+
 ## FAQ
 
 **_I'm finding extra false clusters_** : There are a number of reasons pbaa might generate false positive clusters. Chimeric reads, false variant calls, and clustering errors. Often the statistics in the fasta headers can provide clues. Changing filtering settings may reduce false positives.

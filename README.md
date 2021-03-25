@@ -222,6 +222,10 @@ THIS WEBSITE AND CONTENT AND ALL SITE-RELATED SERVICES, INCLUDING ANY DATA, ARE 
 
 ## Full Changelog
 
+* 0.1.4: March 1st, 2021
+ 1. bugfix: Homopolymer compression can be turned off in duplicate marking using --no-hpc.
+ 2. bugfix: Filter reads that are too short, before/after homopolymer compression.
+
 * 0.1.3: Feb 16, 2021
  1. Updated CLI, highlighting faidx/fqidx required.
 

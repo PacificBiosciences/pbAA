@@ -1,9 +1,14 @@
-# PacBio Amplicon Analysis (_pbaa_)
+<p align="center">
+  <img src="img/pbaa_logo_transparent.png" alt="pbaa logo" width="250px"/>
+</p>
+<h1 align="center"><i>pbaa</i></h1>
+<p align="center">PacBio Amplicon Analysis</p>
 
+***
 
 PacBio Amplicon Analysis (_pbaa_) separates complex mixtures of amplicon targets from genomic samples. The _pbaa_ application is designed to cluster and generate high-quality consensus sequences from HiFi reads. This application only works on HiFi amplicon data. There are several assumptions made within the code that will only support high quality reads (>QV20). This application will not work on CLR data. _pbaa_ is reference aided method (pseudo de-novo).
 
-Typical use cases involve multi-allelic samples where the sample-specific ploidy or copy number is unknown. _pbaa_ can effectively separate alleles with one to many variants, including SNVs and large indels contained within the target region. _pbaa_ has been optimized and tested for datasets with a moderate (<10) cluster count.  Feedback for higher cluster density is welcome and may be addressed in future releases.  
+Typical use cases involve multi-allelic samples where the sample-specific ploidy or copy number is unknown. _pbaa_ can effectively separate alleles with one to many variants, including SNVs and large indels contained within the target region. _pbaa_ has been optimized and tested for datasets with a moderate (<10) cluster count.  Feedback for higher cluster density is welcome and may be addressed in future releases.
 
 ## Workflow
 ![HiFi Amplicon Analysis Workflow](img/workflow.png)
@@ -105,7 +110,7 @@ _pbaa_ supports batching of samples via the FOFN (file of file name[s]) format. 
 
 Guide/reference sequence choice affects read grouping/placement. It is important to choose guides that are sufficiently divergent. If too many similar alleles are used for the same locus the fraction of un-placed reads will increase because the number of informative kmers decrease within a locus. Too few guides can also cause cluster dropout; it's the goldilocks problem.
 
-Guide sequences should be grouped into locus assignments. For example if multiple HLA-A alleles are used in the guide sequence, they should be grouped, so clustering will be performed at the locus level.  
+Guide sequences should be grouped into locus assignments. For example if multiple HLA-A alleles are used in the guide sequence, they should be grouped, so clustering will be performed at the locus level.
 
 ```
 Allele_1|HLA-A (sequence name | group name)
@@ -177,7 +182,7 @@ m54043_190914_194303/4195156/ccs HLA-B + HLA00158_B_14-02-01-01_4070_bp|HLA-B 0.
 
 ## Best practices
 
-### Sample preparation and sequencing  
+### Sample preparation and sequencing
 
 [Targeted Sequencing For Amplicons Document](https://www.pacb.com/wp-content/uploads/Application-Brief-Targeted-sequencing-Best-Practices.pdf)
 

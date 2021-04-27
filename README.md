@@ -201,6 +201,11 @@ We've optimized the default parameters to perform well on several datasets. In g
 ### Provide an off-target-groups file.
 Amplification can generate off target reads. Similarly, pbaa can accidentally place a few reads in the wrong grouping/locus. These reads may generate clusters that are off-target (not amplified). By providing a list of guide-names / group-names (one per line), pbaa will filter these out.
 
+### Understanding the error correction stage options
+![HiFi Amplicon Analysis Workflow](img/error_correction.png)
+
+There are four hurestics to consider adjusting depending on the experiment (_max-reads-per-guide_, _max-alignments-per-read_, _pile-size_, _min-var-frequency_). In the above image, there are a total of _max-reads-per-guide_ to consider for each HiFi (A-read). An A-read is randomly aligned to _max-alignments-per-read_. These alignments are sorted in decreasing sequence idenity. A total of _pile-size_ reads are retained to correct the A-read. The _min-var-frequency_ is the fraction of reads within a _pile_ that support that the A-read is correct at any position along the A-read.
+
 
 ## Advanced / Hidden Options
 

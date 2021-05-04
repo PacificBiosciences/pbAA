@@ -243,6 +243,9 @@ THIS WEBSITE AND CONTENT AND ALL SITE-RELATED SERVICES, INCLUDING ANY DATA, ARE 
 
 ## Full Changelog
 
+* 1.0.1: May the 4th be with you, 2021
+ 1. Decrease memory and runtime by refactoring how the reads are loaded. 
+
 * 1.0.0: April 23rd, 2021
  1. Major algorithm refactor, and many changes to CLI.
 

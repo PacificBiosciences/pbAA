@@ -243,6 +243,9 @@ THIS WEBSITE AND CONTENT AND ALL SITE-RELATED SERVICES, INCLUDING ANY DATA, ARE 
 
 ## Full Changelog
 
+* 1.0.2: June 22nd, 2021
+ 1. Minor bug fixes.
+
 * 1.0.1: May the 4th be with you, 2021
  1. Decrease memory and runtime by refactoring how the reads are loaded. 
 

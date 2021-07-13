@@ -188,6 +188,9 @@ One row per read, columns as follows:
 m64012_200712_164638/72090819/ccs HLA-DRB5 - HLA00622_DQB1_02-01-01_7480_bp|HLA-DQB1 0.714286 f:5/s:2/sum:8 /pbi/dept/appslab/projects/old/2020/jh_hla/2020-07-13_HGgendx/fastq_sqII/demultiplex.bc1099--bc1099.fastq 3125 58.6149 1 1
 ```
 
+## Demonstration Data
+Demonstration data for testing __pbaa__ can be found [here](https://downloads.pacbcloud.com/public/dataset/pbAmpliconAnalysis_HLA/).  Dataset contains HiFi reads for 6 pooled HLA genes in FASTQ format. Outputs from running _pbaa_ as well as validated genotypes are included.
+
 ## Best practices
 
 ### Sample preparation and sequencing  

@@ -246,6 +246,9 @@ THIS WEBSITE AND CONTENT AND ALL SITE-RELATED SERVICES, INCLUDING ANY DATA, ARE 
 
 ## Full Changelog
 
+* 1.0.3: September 1st, 2021
+ 1. Changes to error masking for indels.  
+
 * 1.0.2: June 22nd, 2021
  1. Minor bug fixes.
 

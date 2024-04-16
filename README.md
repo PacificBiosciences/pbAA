@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="img/pbaa_logo_transparent.png" alt="pbaa logo" width="250px"/>
+  <img src="img/logo_pbaa.svg" alt="pbaa logo" width="250px"/>
 </p>
 <h1 align="center"><i>pbaa</i></h1>
 <p align="center">PacBio Amplicon Analysis</p>

@@ -49,9 +49,9 @@ Usage:
   pbaa cluster [options] <guide input> <read input> <prefix>
 
   guide input                FILE   Guide sequence(s) in fasta format indexed with samtools faidx version 1.9 or
-                                    greater. A FOFN can be provide for multiple files.
+                                    greater. A FOFN can be provided for multiple files.
   read input                 FILE   De-multiplexed HiFi reads in fastq format indexed with samtools fqidx version 1.9
-                                    or greater. A FOFN can be provide for multiple files.
+                                    or greater. A FOFN can be provided for multiple files.
   prefix                     STR    Output prefix for run.
 
 Placement and Variant Options:

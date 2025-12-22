@@ -234,6 +234,8 @@ A number of heuristics and advanced options are hidden from the interface. They 
 
  `--min-var-frequency` : The minimum variant frequency within a pile of reads used for error correction. Decreasing this value will increase sensitivity to low-frequency variants. This can lead to over clustering.
 
+**_Coverage/input recommendations_**: the accuracy of pbAA results plateaus after around 1000 reads. Where runtime or memory usage is problematic, downsampling to this value is a straightforward way to address the problem.
+
 **_Extra false clusters_**: There are a number of reasons pbaa might generate false positive clusters. Chimeric reads, false variant calls, and clustering errors. Often the statistics in the fasta headers can provide clues. Changing filtering settings may reduce false positives.
 
 **_Missing clusters_**: _pbaa_ was tuned for sensitivity, favoring false positives over false negatives. However, false negatives do happen at a low rate. First check if the missing cluster is in the {prefix}_failed_cluster_sequences.fasta file. Then check that there is sufficient coverage over the guide sequences, by aligning reads to the guide sequences. For this application we recommend a minimum of 25x depth of coverage per allele. If there is coverage check for missed variants. If you believe pbaa failed to discover a variant resulting in a false negative, please share a small example. Variant discover is the most challenging step in _pbaa_.
